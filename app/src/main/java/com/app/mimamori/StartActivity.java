@@ -69,7 +69,7 @@ public class StartActivity extends Activity {
     @SuppressLint("MissingPermission")
     private void openCamera(){
         try {
-            mCameraManager.openCamera("0", new CameraDevice.StateCallback() {
+            mCameraManager.openCamera("1", new CameraDevice.StateCallback() {
                 @Override
                 public void onOpened(@NonNull CameraDevice cameraDevice) {
                     mCameraDevice = cameraDevice;
@@ -89,6 +89,8 @@ public class StartActivity extends Activity {
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
+
+
 
     }
 
